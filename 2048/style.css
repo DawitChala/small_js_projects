@@ -1,0 +1,78 @@
+@import "fontsource-clear-sans";
+body {
+    background-color: #faf8ef;
+}
+
+#board {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: fit-content;
+    height: fit-content;
+    background-color: #bbaea0;
+    border-color: #bbaea0;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.row {
+    display: block;
+    padding: 0px;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    font-size: 30px;
+    text-align: center;
+    background-color: #cdc1b5;
+    border-width: 5px;
+    border-color: #bbaea0;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    animation-duration: 10s;
+    animation-name: slidein;
+    font-family: "Clear sans", "Helvetica Nue", Arial;
+    font-weight: bold;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    from {
+        height: 100px;
+        margin-left: 100%;
+        width: 100px;
+    }
+    to {
+        height: 100px;
+        margin-left: 0%;
+        width: 100px;
+    }
+}
+
+#loosing_container {
+    top: 3.3%;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    height: 464.4444px;
+    width: 464.4444px;
+    background-color: rgba(1, 1, 1, 0.8);
+    visibility: hidden;
+}
+
+#YOU_LOST {
+    color: white;
+    top: 10px;
+    position: relative;
+    left: 31%;
+}
+
+#restart {
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=style.css>
+    <title>Vekt transformation</title>
+</head>
+<body>
+    <h1>THE big ass converter</h1>
+    <div class="whole">
+        <div id="container">
+            <label id="tekst1">Konverter fra </label>
+            <select id="select1">
+            <!-- #region  <option value="10">Hey</option> --> 
+                <option selected value="base" disabled>Velg</option>
+            </select>
+            <label id="tekst">Til</label>
+            <select id="select2">
+                <option selected value="base" disabled>velg</option>
+                
+              </select>
+        </div>
+            <div class="input">
+                <input type="text" placeholder="tall" id="konverter">
+                <button class="send" onclick=convert()>Konverter</button>
+                <output id="tekst2"></output>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

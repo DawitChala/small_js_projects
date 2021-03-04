@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>YOO Notater</title>
+</head>
+
+<body>
+    <div id="skriveomraade">
+        <input type="text" required placeholder="Aktivitet (nødvendig)" id="description">
+        <button id="leggTil" onclick="leggTil()">Legg til</button>
+        <textarea id="Text1" placeholder="Beskrvielse" cols="40" rows="5"></textarea>
+
+    </div>
+    <div id="out">
+
+
+    </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+            <input id="change_title" required type="text" placeholder="Aktivitet (nødvendig)"></input>
+            <textarea id="change_desc" placeholder="Beskrvielse" cols="40" rows="5"></textarea>
+            <div id="knapper">
+                <button id="bekreft" onclick="change(this)">bekreft</button>
+                <button onclick="escape()" id="avkreft">Avbryt</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

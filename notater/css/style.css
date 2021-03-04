@@ -1,0 +1,175 @@
+#skriveomraade {
+    display: block;
+    position: absolute;
+    height: fit-content;
+    transform: translateX(-50%);
+    left: 50%;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    border-width: 1px;
+    border-color: burlywood;
+    background-color: antiquewhite;
+}
+
+#Text1 {
+    display: block;
+    margin-top: 10px;
+    resize: none;
+}
+
+#description {
+    height: 20px;
+}
+
+#leggTil {
+    margin-left: 10px;
+}
+
+body {
+    background-color: bisque;
+}
+
+#out {
+    position: relative;
+    display: flex;
+    height: fit-content;
+    top: 180px;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.biggest {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: burlywood;
+    position: relative;
+    background-color: antiquewhite;
+    overflow: auto;
+}
+
+.slett {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding-top: 3px;
+    background: transparent;
+    border-style: solid;
+    border-radius: 20%;
+    border-width: 1px;
+    border-color: burlywood;
+}
+
+.slett:hover {
+    background-color: burlywood;
+}
+
+.desc {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.title {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.edit {
+    position: absolute;
+    top: 0;
+    right: 24px;
+    height: 19px;
+    width: 19px;
+    border-style: solid;
+    border-radius: 20%;
+    border-width: 1px;
+    border-color: burlywood;
+    color: blue;
+}
+
+.edit:hover {
+    background-color: burlywood;
+}
+
+#change_title {
+    display: block;
+    position: relative;
+    top: -10px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+#knapper {
+    position: relative;
+    left: 120px;
+    margin-top: 10px;
+}
+
+
+/*position: absolute;
+height: 100px;
+display: block;
+top: 30%;
+height: fit-content;
+display: flex;
+flex-basis: 100px;*/
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: antiquewhite;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: fit-content;
+    height: fit-content;
+    /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

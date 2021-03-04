@@ -1,0 +1,55 @@
+.board div {
+    height: 40px;
+    width: 40px;
+    background: black;
+}
+
+#board {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 40px;
+    left: 50%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.rute {
+    display: inline-block;
+    background: black;
+    border-style: solid;
+    border-color: gray;
+    height: 40px;
+    width: 40px;
+}
+
+.space {
+    display: block;
+    height: 0px;
+}
+
+#update_button {
+    position: absolute;
+    bottom: 30%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 1px;
+    left: 50%;
+    border-color: blanchedalmond;
+}
+
+#reset {
+    border-style: solid;
+    border-width: 1px;
+    border-color: blanchedalmond;
+    position: absolut;
+    left: 0;
+    border-color: blanchedalmond;
+}
+
+#update_button:hover {
+    background: blanchedalmond;
+}
+
+body {
+    background: beige;
+}
